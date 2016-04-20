@@ -7,4 +7,9 @@ describe "Juego Peliculas" do
 		game.pista.should=="Transcurre en Roma"		
 	end
 	
+	it "Ingresa Respuesta" do
+		game=Peliculas.new
+		game.evaluar.should==game.evaluar 	
+	end
+
 end

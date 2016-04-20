@@ -5,4 +5,8 @@ Scenario: Ver el titulo
 	Then Tengo que ver "Pista 1"
 	And Tengo que ver "Transcurre en Roma"
 
-
+Scenario: Ingresa Respuesta
+	Given Presentar Pista
+	When Ingreso "GLADIADOR"
+	Then Tengo que ver "Ganador"
+	
