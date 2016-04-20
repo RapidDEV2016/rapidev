@@ -20,4 +20,9 @@ describe "Juego Peliculas" do
 		game.estado.should=="Juego reiniciado"
 	end
 	
+	it "Ingresa Respuesta" do
+		game=Peliculas.new
+		game.evaluar.should==game.evaluar 	
+	end
+
 end
