@@ -3,13 +3,6 @@
 <br>
 <h2>Pista 1 :</h2> <b><%=@pista%></b>
 <br>
-<<<<<<< HEAD
-<form method="POST" action="/terminar"><input type="submit" name="Terminar" value="Terminar" /></form>
-<br>
-<form method="POST" action="/reiniciar"><input type="submit" name="Reiniciar" value="Reiniciar" /></form>
-<br>
-<h2><b><%=@estado%></b>
-=======
 <br>
 <form name="FRM" Method="POST">
 <h2>Ingrese Respuesta:</h2> <input type="text" name="respuesta">
@@ -17,4 +10,8 @@
 <input type="submit" value="Responder">
 <h1><%=@evaluar%></h1>
 </form>
->>>>>>> e227ae2021b3f377d074014509839c3c8197ee49
+<form method="POST" action="/terminar"><input type="submit" name="Terminar" value="Terminar" /></form>
+<br>
+<form method="POST" action="/reiniciar"><input type="submit" name="Reiniciar" value="Reiniciar" /></form>
+<br>
+<h2><b><%=@estado%></b>

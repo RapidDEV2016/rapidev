@@ -10,7 +10,6 @@ Then(/^Tengo que ver "(.*?)"$/) do |texto|
   last_response.body.should =~ /#{texto}/m
 end
 
-<<<<<<< HEAD
 When(/^Termina juego$/) do
 	click_button("Terminar")
 end
@@ -18,12 +17,9 @@ end
 When(/^Reiniciar juego$/) do
 	click_button("Reiniciar")
 end
-=======
+
 When(/^Ingreso "(.*?)"$/) do |titulo|
   fill_in("respuesta", :with => titulo)
   click_button("Responder")
 end
-
-
->>>>>>> e227ae2021b3f377d074014509839c3c8197ee49
 
