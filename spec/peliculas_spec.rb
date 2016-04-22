@@ -4,18 +4,12 @@ describe "Juego Peliculas" do
 
 	it "Presentar Pista" do
 		game=Peliculas.new
+		game.incrementarpista
 		game.pista.should=="Transcurre en Roma"
-	end
-
-	it "Terminar" do
-		game=Peliculas.new
-		game.terminar
-		game.estado.should=="Juego finalizado"
 	end
 
 	it "Reiniciar" do
 		game=Peliculas.new
-		game.terminar
 		game.reiniciar
 		game.estado.should=="Juego reiniciado"
 	end
@@ -23,6 +17,18 @@ describe "Juego Peliculas" do
 	it "Ingresa Respuesta" do
 		game=Peliculas.new
 		game.evaluar.should==game.evaluar 	
+	end
+
+	it "Ingresa Respuesta erroenea" do
+		game=Peliculas.new
+		game.evaluar.should==game.evaluar 	
+	end
+
+	it "Solicitar nueva pista" do
+		game=Peliculas.new
+		game.incrementarpista
+		game.incrementarpista
+		game.pista.should=="Los Protagonistas usan Escudos"	
 	end
 
 end

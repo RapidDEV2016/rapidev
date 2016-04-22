@@ -10,15 +10,19 @@ Scenario: Ingresa Respuesta
 	When Ingreso "GLADIADOR"
 	Then Tengo que ver "Ganador"
 
-Scenario: Terminar juego
+Scenario: Ingresa Respuesta erronea
 	Given Presentar Pista
-	When Termina juego
-	Then Tengo que ver "Juego finalizado"
+	When Ingreso "Pepe"
+	Then Tengo que ver "Perdedor"
 
 Scenario: Jugar otra vez
 	Given Presentar Pista
-	When Termina juego
-	And Reiniciar juego
+	When Reiniciar juego
 	Then Tengo que ver "Juego reiniciado"
+
+Scenario: Agregar mas pistas
+	Given Presentar Pista
+	When Solicitar nueva pista
+	And Tengo que ver "Pista 2"
 
 

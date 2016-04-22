@@ -1,17 +1,18 @@
 <h1>Adivina la Pelicula</h1>
 <br>
 <br>
-<h2>Pista 1 :</h2> <b><%=@pista%></b>
+<form method="POST" action="/nuevapista">
+<h2>Pista <%=@indicepistas%>:</h2> <b><%=@pista%></b>
+<input type="submit" name="Nueva pista" value="Nueva pista" />
+</form>
 <br>
 <br>
-<form name="FRM" Method="POST">
+<form action="/" name="FRM" Method="POST">
 <h2>Ingrese Respuesta:</h2> <input type="text" name="respuesta">
 <br>
 <input type="submit" value="Responder">
 <h1><%=@evaluar%></h1>
 </form>
-<form method="POST" action="/terminar"><input type="submit" name="Terminar" value="Terminar" /></form>
-<br>
 <form method="POST" action="/reiniciar"><input type="submit" name="Reiniciar" value="Reiniciar" /></form>
 <br>
 <h2><b><%=@estado%></b>
