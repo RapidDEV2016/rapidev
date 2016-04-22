@@ -19,4 +19,10 @@ When(/^Solicitar nueva pista$/) do
   click_button("Nueva pista")
 end
 
+When(/^Agregar muchas respuestas$/) do
+  click_button("Responder")
+  click_button("Responder")
+  click_button("Responder")
+end
+
 
