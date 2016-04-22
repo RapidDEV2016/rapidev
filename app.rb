@@ -30,3 +30,7 @@ post '/nuevarespuesta' do
 	@pista = @@game.pista
 	erb :peliculas
 end
+
+post '/salir' do
+	erb :salir
+end

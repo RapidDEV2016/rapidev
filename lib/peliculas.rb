@@ -2,7 +2,7 @@ class Peliculas
 	def initialize
 	@pistas=["Transcurre en Roma","Los Protagonistas usan Escudos","Esta Pelicula Gano al menos un Oscar "]
 	@@titulopelicula="GLADIADOR"
-	@estados=["Jugando", "Juego reiniciado"]
+	@estados=["Jugando", "Juego reiniciado", "Has salido del juego"]
 	@indiceestados = 0
 	@resp= ""
 	@indicepistas = 0
@@ -39,5 +39,9 @@ end
 	def respuesta arg
 		@respuestas += 1
 		@resp = arg
+	end
+
+	def salir
+		@indiceestados = 2
 	end
 end

@@ -25,4 +25,8 @@ When(/^Agregar muchas respuestas$/) do
   click_button("Responder")
 end
 
+When(/^Salir$/) do
+  click_button("Salir")
+end
+
 

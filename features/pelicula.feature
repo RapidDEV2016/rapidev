@@ -30,4 +30,9 @@ Scenario: "Agregar muchas respuesta"
 	When Agregar muchas respuestas
 	Then Tengo que ver "Perdedor"
 
+Scenario: "Salir"
+	Given Presentar Pista
+	When Salir
+	Then Tengo que ver "Has salido del juego"
+
 

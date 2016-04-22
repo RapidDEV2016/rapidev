@@ -40,4 +40,10 @@ describe "Juego Peliculas" do
 		game.evaluar.should == "Perdedor" 
 	end
 
+	it "Salir" do
+		game=Peliculas.new
+		game.salir
+		game.estado.should == "Has salido del juego" 
+	end
+
 end
